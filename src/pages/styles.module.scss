@@ -1,0 +1,83 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 120rem;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+
+    background-color: var(--background-color);
+    margin-top: 8rem;
+
+    h1 {
+        font-size: 4.8rem;
+        color: var(--text-primary-color);
+        font-weight: 400;
+        margin-bottom: 1.6rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+        color: var(--text-secondary-color);
+        font-weight: 400;
+    }
+}
+
+.wrongText {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: var(--wrong-color);
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-left: 0.8rem;
+    }
+}
+
+.correctText {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: var(--correct-color);
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-left: 0.8rem;
+    }
+}
+
+.textSection {
+    margin-top: 4.8rem;
+}
+
+.textArea {
+    padding: 3.2rem;
+
+    width: 106.7rem;
+    height: 24.2rem;
+
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    color: var(--placeholder-color);
+    font-size: 3.4rem;
+
+    margin-top: 2rem;
+
+    resize: none;
+
+    &:focus,
+    input:focus {
+        -moz-appearance: none;
+        outline: 0px none transparent;
+    }
+}

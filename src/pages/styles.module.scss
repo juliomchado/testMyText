@@ -14,7 +14,7 @@
     h1 {
         font-size: 4.8rem;
         color: var(--text-primary-color);
-        font-weight: 400;
+        font-weight: 500;
         margin-bottom: 1.6rem;
     }
     h2 {
@@ -60,24 +60,90 @@
     margin-top: 4.8rem;
 }
 
-.textArea {
-    padding: 3.2rem;
+.textAreaContainer {
+    width: 100%;
+    height: 100%;
 
-    width: 106.7rem;
-    height: 24.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    border-radius: 0.5rem;
-    border: 1px solid transparent;
-    color: var(--placeholder-color);
-    font-size: 3.4rem;
+    .textArea {
+        padding: 3.2rem;
 
-    margin-top: 2rem;
+        width: 106.7rem;
+        height: 24.2rem;
 
-    resize: none;
+        border-radius: 0.5rem;
+        border: 1px solid transparent;
+        color: var(--placeholder-color);
+        font-size: 2.4rem;
 
-    &:focus,
-    input:focus {
-        -moz-appearance: none;
-        outline: 0px none transparent;
+        margin-top: 2rem;
+
+        resize: none;
+
+        &:focus,
+        input:focus {
+            -moz-appearance: none;
+            outline: 0px none transparent;
+        }
     }
+
+    button {
+        width: 26.4rem;
+        height: 5rem;
+
+        background-color: #2196f3;
+        color: var(--background-color);
+
+        border-radius: 0.5rem;
+        border: none;
+
+        font-size: 2.4rem;
+        font-weight: 500;
+
+        transition: filter 0.5s;
+
+        margin-top: 2rem;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+}
+
+.errorsSection {
+    margin-top: 3.2rem;
+    gap: 0.8rem;
+}
+
+.errorMessage {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: var(--wrong-color);
+    font-size: 2rem;
+    font-weight: 500;
+
+    svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-left: 0.8rem;
+    }
+}
+
+.suggests {
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+
+    span {
+        color: var(--text-primary-color);
+        font-weight: 500;
+    }
+
+    color: var(--text-secondary-color);
+    font-weight: 500;
 }
